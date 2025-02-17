@@ -1,0 +1,32 @@
+body { background-image: url('image/the-creator-.jpg'); background-repeat: no-repeat; background-size: cover; filter: ; overflow: hidden;}
+ h1 {  
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-align: center; 
+}
+ p {  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-align: center; position: relative; left: 19%; font-size: large;}
+ .A1 { font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; position: relative; left: 40%; width: 60%; font-size: large; text-align: justify; line-height: 23px;
+ }
+.D1{display: inline-block; position: relative; left: 80%; }
+ .image1 { width: 350px; height: 200px; margin: 5px; padding: 2px;}
+ .tenet{font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; position: relative; left: 3%;}
+ .D2{display: inline-block; position: relative; left: 38%;}
+ .image2{width: 250; height: 200px;margin: 5px; padding: 2px;}
+ .dark{ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; position: relative; left: 3%;}
+ .D3{display: inline-block; position: relative; left: -4%;}
+ .image3{width: 250; height: 200px;margin: 5px; padding: 2px;}
+ .Severance{ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; position: relative; left: 3%}
+ .A2{ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; position: relative; left: 40%; width: 60%; font-size: large; text-align: justify; line-height: 25px;
+ }
+ .D4{display: inline-block; position: relative; left: 80%; }
+ .image4 { width: 300px; height: 200px; margin: 5px; padding: 2px;}
+ .TheRoundUp{font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; position: relative; left: 3%;}
+ .D5{display: inline-block; position: relative; left: 20%;}
+ .image5{width: 300px; height: 200px;margin: 5px; padding: 2px;}
+ .Tryant{ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; position: relative; left: 3%;}
+ .D6{display: inline-block; position: relative; left: 25%;}
+ .image6{width: 300px; height: 200px;margin: 5px; padding: 2px;}
+ .DP{ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; position: relative; left: 3%;}
+ .A3{font-family: 'Courier New', Courier, monospace; float: right; }
+ .H{color: black; position: relative; left: 1%; }
+ a {text-decoration: none;}
+ 
+ 
