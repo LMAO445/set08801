@@ -1,0 +1,25 @@
+.grid-cotainer{
+    display: grid;
+    grid-template-columns: repeat(5,300px);
+    gap: 70px;
+}
+.item {
+    text-align: center;   
+}
+.img {
+    width: 300px; margin: 5px; border-radius: 20px; height: 200px;
+}
+.p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: rgb(255, 255, 255);
+}
+.h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 150%; color: whitesmoke;
+}
+a {
+    text-decoration: none;
+}
+body {
+   background-image: url(image/Background.jpg);
+   background-repeat: no-repeat;
+   background-size: 100%;
+}

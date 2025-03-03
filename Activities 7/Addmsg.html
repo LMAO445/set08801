@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Add Message</p>
+    <p id='output'></p>
+    <script>
+        let lama =document.getElementById('output');
+        lama.onclick = function(){
+            lama.innerHTML="You better get outta here!";
+            lama.style.fontFamily ="Arial";
+        }
+        lama.onmouseover = function(){
+            lama.textContent="Get out!";
+            lama.style.fontWeight="bolder";
+        }
+    </script>
+</body>
+</html>
