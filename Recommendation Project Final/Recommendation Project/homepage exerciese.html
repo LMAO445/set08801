@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body style="background-color: hwb(193 60% 17%); overflow-x: hidden; background-image: url(image/Background4.jpg); ">
+
+   <nav class="N1">
+      <div id="ID1" class="D1">
+         <p>MIDNIGHT-FLIX</p>
+      </div>
+      <div id="ID2" class="D1"><a href="show-recommendation.html">
+            <p style="color: #000000;">Shows </p>
+         </a></div>
+      <div id="ID2" class="D1"><a href="movie-recommendation.html">
+            <p style="color: #000000;">Movies </p>
+         </a></div>
+      <div id="ID2" class="D1"><a href="Contact.html">
+            <p style="color: #000000;">Contact </p>
+         </a></div>
+      <div id="ID2" class="D1"><a href="Aboutstream.html"><button>Stream</button></a></div>
+   </nav>
+   <header>
+      <h1 style="text-align: center; font-family: 'Courier New', Courier,">Midnight-Flix </h1>
+   </header>
+   <section class="S1" style="text-align: center;">
+      <div style=" display: inline-block; text-align: center;">
+         <a href="home.html" target=" _blank ">
+            <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: black;">Home|</p>
+         </a>
+      </div>
+      <div style=" display: inline-block; text-align: center;">
+         <a href="external.html" target=" _blank ">
+            <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: black;">About
+               Asia Entertainment Industry|</p>
+         </a>
+      </div>
+      <div style=" display: inline-block; text-align: center;">
+         <a href="pagegrid.html" target=" _blank ">
+            <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: black;">Preminum
+               & Budget|</p>
+         </a>
+      </div>
+      <div style=" display: inline-block; text-align: center;">
+         <a class="java" href="#" onclick="openRandomLink()">Fact</a>
+      </div>
+   </section>
+   <section style="text-align: center; color: black;">
+      <br>
+      <header style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">What is Midnight-Flix?
+      </header>
+      <article style="font-size: large; padding: 5px;">Midnight-Flix is for Movies and TV Shows Recommendation.
+      </article>
+   </section>
+   <h1 style="text-align: center; position: relative; left: 43%;">News</h1>
+   <aside
+      style="width: 20%; float: right; border: 5% #000000; background-color: aliceblue;; text-align: center; max-width: 230px">
+      <a href="https://screenrant.com/jensen-ackles-upcoming-movies-tv-shows/">
+         <p style="color: #000000; font-family: Georgia, 'Times New Roman', Times, serif;">
+            Jesen Ackles on new TV Shows
+         </p>
+      </a>
+      <a href="https://thedirect.com/article/reacher-season-3-release-date-schedule-confirmed">
+         <p style="color: #000000; font-family: Georgia, 'Times New Roman', Times, serif;">
+            Reacher Seaonson 3 Release Date</p>
+      </a>
+   </aside>
+   <img src="image/Midnight-Flix.png" alt="Movie" width="700px" height="450px"
+      style="position: relative ; left: 40px; margin-top: -50px;">
+
+   <nav>
+      <br>
+      <aside class="Plat"> Admin will provide the plaform to stream those Tv shows and Movies.You have to be a member of
+         whatever streaming you are going to use.
+         Streaming platform that will take you to are Netflix or Prime. These movies and shows are selected by this page
+         author. Some shows and movies are not that much
+         of a good looking but it sure have something intresting storyline or plot. These shows and movies are selected
+         for reason. They either have good story or visual.
+         We will also provide some platform that are free to use.
+      </aside>
+   </nav>
+   <br>
+   <footer
+      style="font-family: Georgia, 'Times New Roman', Times, serif; text-align: center; color: rgb(247, 247, 247);">
+      <p>I hope my recommendation didn't disappoint you.</p>
+   </footer>
+   <script>
+      function openRandomLink() {
+         var links = [
+            "Fact1.html",
+            "Fact2.html"
+         ];
+         var randomIndex = Math.floor(Math.random() * links.length);
+         var randomLink = links[randomIndex];
+         window.open(randomLink, "_blank");
+      }
+   </script>
+</body>
+<style type="text/css">
+   a {
+      text-decoration: none;
+   }
+
+   aside {
+      border: 2px solid rgb(188, 208, 208);
+      border-radius: 10px;
+      color: aliceblue;
+   }
+
+   .S1 {
+      border: 2px solid black;
+      background-color: whitesmoke;
+      width: 40%;
+      margin: auto;
+      border-radius: 15px;
+   }
+
+   .D1 {
+      width: 200px;
+      height: 70px;
+      align-items: center;
+      display: flex;
+      font-weight: bold;
+   }
+
+   .N1 {
+      display: flex;
+   }
+
+   #ID1 {
+      flex-grow: 1;
+      max-width: 70%;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-size: 50px;
+      color: rgb(230, 11, 11)
+   }
+
+   #ID2 {
+      justify-content: center;
+      align-items: center;
+      color: rgb(0, 0, 0);
+   }
+
+   .Plat {
+      text-align: justify;
+      line-height: 25px;
+      font-size: larger;
+      color: #000000;
+      flex-grow: 1;
+      background-color: snow;
+      border-color: #070404;
+      border-radius: 15px;
+      width: 40%;
+      padding: 15px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      position: relative;
+      left: 32px;
+   }
+
+   button {
+      border-radius: 8px;
+      width: 100%;
+      height: 100%;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      background-color: rgba(255, 255, 255, 0.767);
+      color: rgb(15, 15, 15);
+      font-size: medium;
+   }
+
+   .java {
+      color: #000000;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   }
+</style>
+
+</html>

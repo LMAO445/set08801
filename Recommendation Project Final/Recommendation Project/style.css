@@ -1,0 +1,209 @@
+body {
+  background-color: #ffffff;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Add centering only for the centered class */
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #1a1a1a;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+  width: 320px;
+  text-align: center;
+}
+
+.main-header {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #000000;
+  text-align: center;
+  margin-top: 20px;
+  background-color: #ffffff;
+}
+
+.Navi {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgb(255, 251, 251);
+  flex-wrap: wrap;
+  color: #0d0d0d;
+}
+
+.Div1 p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #ff3c3c;
+  font-size: 24px;
+  margin: 0;
+}
+
+.navtext a {
+  text-decoration: none;
+}
+
+.navtext p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  margin: 0;
+  padding: 8px 12px;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 6px;
+}
+
+.navtext p:hover {
+  background-color: #5ca6eb;
+  color: #1a1a1a;
+}
+
+.footer-text {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  color: white;
+  margin-top: 40px;
+}
+
+h2 {
+  color: #ff3c3c;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #ff3c3c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #e22b2b;
+}
+
+a {
+  color: #ff3c3c;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p {
+  margin-top: 20px;
+}
+
+/* ===== Movie & Show Container ===== */
+#movie-container,
+#show-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+  background-color: #ffffff;
+}
+
+/* ===== Individual Card Style ===== */
+.card {
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  padding: 10px;
+  width: 250px;
+  box-shadow: 0 0 10px rgba(255, 60, 60, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 15px rgba(255, 60, 60, 0.5);
+}
+
+.card img {
+  width: 250px;
+  height: 380px;
+  margin: 5px;
+}
+
+.card p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+  margin: 0;
+}
+
+/* ===== Search & Filter Bar ===== */
+.search-bar {
+  text-align: center;
+  margin: 30px 0 10px;
+}
+
+.search-bar input,
+.search-bar select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+  margin: 5px;
+  width: 200px;
+}
+
+.search-bar input:focus,
+.search-bar select:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 60, 60, 0.6);
+}
+
+.recent-item {
+  margin: 10px auto; /* Top & bottom: 10px, Left & right: auto (centers it) */
+  padding: 10px;
+  width: 80%;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+}
+
+.recent-item p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: black;
+}
+
+/* Style the 'Mark as Watched' button */
+.watch-button {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.watch-button:disabled {
+  background-color: #d3d3d3;
+  cursor: not-allowed;
+}

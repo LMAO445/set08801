@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+</head>
+
+<body>
+    <script>
+        function filterMovies() {
+            let checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+            let selectedCategories = Array.from(checkboxes).map(cb => cb.value);
+
+            let movies = document.querySelectorAll('.movie');
+            let shows = document.querySelectorAll('.show');
+
+            movies.forEach(movie => {
+                let movieCategory = movie.getAttribute('data-category');
+                if (selectedCategories.includes('all') || selectedCategories.length === 0) {
+                    movie.style.display = "block";
+                } else {
+                    movie.style.display = selectedCategories.includes(movieCategory) ? "block" : "none";
+                }
+            });
+        }
+
+    </script>
+    <div>
+        <a href="home.html">
+            <p class="home">Home </p>
+        </a>
+    </div>
+    <nav id="categorySelect">
+        <label>
+            <input type="checkbox" value="all" checked onclick="filterMovies('all')"> All
+        </label>
+        <label>
+            <input type="checkbox" value="action" onchange="filterMovies('action')"> Action
+        </label>
+        <label>
+            <input type="checkbox" value="comedy" onclick="filterMovies('comedy')"> Comedy
+        </label>
+        <label>
+            <input type="checkbox" value="horror" onclick="filterMovies('')"> Horror
+        </label>
+        <label>
+            <input type="checkbox" value="sci-fi" onclick="filterMovies('sci-fi')"> Sci-Fi
+        </label>
+        <label>
+            <input type="checkbox" value="thriller" onclick="filterMovies('thriller')"> Thriller
+        </label>
+
+    </nav>
+    <section class="S1">
+        <div class=" movie" data-category="horror">
+            <img src="image/Quiet P1.jpg">
+            <p>Quiet Place</p>
+        </div>
+        <div class="movie" data-category="horror">
+            <img src="image/Quiet P2.jpg" alt="Horror">
+            <p>Quiet Place Part II</p>
+        </div>
+        <div class="movie" data-category="horror">
+            <img src="image/Quiet P3.jpg" alt="Horror">
+            <p>Quiet Place Part III</p>
+        </div>
+        <div class="movie" data-category="horror">
+            <img src="image/FROM.jpg" alt="Horror">
+            <p>From</p>
+        </div>
+        <div class="movie" data-category="sci-fi">
+            <img src="image/Loki.png" alt="Sci-Fi">
+            <p>Loki</p>
+        </div>
+        <div class="movie" data-category="sci-fi">
+            <img src="image/DARK.jpg" alt="Sci-Fi">
+            <p>Dark</p>
+        </div>
+        <div class="movie" data-category="horror">
+            <img src="image/Midnight Mass.jpg" alt="Horror">
+            <p>Midnight Mass</p>
+        </div>
+        <div class="movie" data-category="action">
+            <img src="image/The boys.jpg" alt="Thriller">
+            <p>The Boys</p>
+        </div>
+        <div class="movie" data-category="sci-fi">
+            <img src="image/Severance.jfif" alt="Sci-Fi">
+            <p>Severance</p>
+        </div>
+    </section>
+    <section class="S1">
+
+    </section>
+</body>
+<style>
+    label {
+        padding: 10px;
+        margin: 20px;
+        font-size: 20px;
+    }
+
+    nav {
+        border: 2px solid black;
+        width: 45%;
+        margin: auto;
+        border-radius: 15px;
+        text-align: center;
+        padding: 3px;
+    }
+
+    img {
+        width: 250px;
+        margin: 5px;
+        height: 380px;
+        padding: 3px;
+    }
+
+    .S1 {
+        display: flex;
+        text-align: center;
+        justify-items: center;
+        padding: 15px;
+        max-width: 600px;
+
+    }
+
+    h1 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+    }
+
+    P {
+        font-family: Georgia, 'Times New Roman', Times, serif
+    }
+
+    .home {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: black;
+    }
+
+    .movie {
+        border: 1px solid #ddd;
+        background-color: #f9f9f9;
+    }
+
+    img {
+        object-fit: cover;
+    }
+</style>
+
+</html>

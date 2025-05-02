@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Register - Midnight-Flix</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="centered">
+  <div class="container">
+    <h2>Register</h2>
+    <input type="text" id="regUsername" placeholder="Username"><br>
+    <input type="password" id="regPassword" placeholder="Password"><br>
+    <button onclick="register()">Register</button>
+    <p>Already have an account? <a href="login.html">Login here</a></p>
+  </div>
+
+  <script>
+    function register() {
+      const username = document.getElementById("regUsername").value.trim();
+      const password = document.getElementById("regPassword").value;
+
+      if (!username || !password) {
+        alert("Please fill in all fields.");
+        return;
+      }
+
+      if (localStorage.getItem(username)) {
+        alert("Username already exists.");
+      } else {
+        localStorage.setItem(username, JSON.stringify({ password }));
+        alert("Registration successful!");
+        window.location.href = "login.html";
+      }
+    }
+  </script>
+</body>
+
+</html>

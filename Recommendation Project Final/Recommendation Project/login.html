@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Login - Midnight-Flix</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="centered">
+  <div class="container">
+    <h2>Login</h2>
+    <input type="text" id="loginUsername" placeholder="Username"><br>
+    <input type="password" id="loginPassword" placeholder="Password"><br>
+    <button onclick="login()">Login</button>
+    <p>Don't have an account? <a href="register.html">Register here</a></p>
+  </div>
+
+  <script>
+    function login() {
+      const username = document.getElementById("loginUsername").value.trim();
+      const password = document.getElementById("loginPassword").value;
+      const user = JSON.parse(localStorage.getItem(username));
+
+      if (user && user.password === password) {
+        localStorage.setItem("loggedInUser", username);
+        alert("Login successful!");
+        window.location.href = "home.html";
+      } else {
+        alert("Invalid username or password.");
+      }
+    }
+  </script>
+</body>
+
+</html>

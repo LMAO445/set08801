@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Show Recommendations</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h1 class="main-header">Shows Recommendation by Midnight-Flix</h1>
+
+    <!-- Navigation -->
+    <nav class="Navi">
+        <div class="Div1">
+            <p>Midnight-Flix</p>
+        </div>
+        <div class="navtext"><a href="home.html">
+                <p>Home</p>
+            </a></div>
+        <div class="navtext"><a href="movie-recommendation.html">
+                <p>Movies Recommendation</p>
+            </a></div>
+        <div class="navtext"><a href="show-recommendation.html">
+                <p>Shows Recommendation</p>
+            </a></div>
+        <div class="navtext"><a href="recent.html">
+                <p>Recent</p>
+            </a></div>
+        <div class="navtext"><a href="quiz.html">
+                <p>Quiz</p>
+            </a></div>
+        <div class="navtext"><a href="Aboutstream.html">
+                <p>Streaming Platform</p>
+            </a></div>
+    </nav>
+
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search by title..." />
+        <select id="platformFilter">
+            <option value="">All Platforms</option>
+            <option value="Action">Action</option>
+            <option value="Thriller">Thriller</option>
+            <option value="Drama">Drama</option>
+            <option value="Horror">Horror</option>
+            <option value="Sci-fi">Sci-fi</option>
+            <option value="Mystery">Mystery</option>
+        </select>
+    </div>
+
+    <div id="show-container"></div>
+
+    <footer class="footer-text">
+        I hope my recommendation didn't disappoint you.
+    </footer>
+
+    <script src="shows.js"></script>
+</body>
+
+</html>

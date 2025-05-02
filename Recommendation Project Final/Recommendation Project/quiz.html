@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Quiz - Midnight-Flix</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .quiz-container {
+      max-width: 700px;
+      margin: 40px auto;
+      background-color: #000000;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(216, 14, 14, 0.3);
+    }
+
+    .quiz-container h2 {
+      text-align: center;
+      color: #ffffff;
+    }
+
+    .question-block {
+      margin-bottom: 25px;
+    }
+
+    .question-block p {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .question-block label {
+      display: block;
+      margin: 5px 0;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    #quiz-result {
+      margin-top: 20px;
+      font-size: 20px;
+      color: #00ff88;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body style="background-color: #ffffff;">
+
+  <!-- Navigation -->
+  <nav class="Navi">
+    <div class="Div1">
+      <p>Midnight-Flix</p>
+    </div>
+    <div class="navtext"><a href="home.html">
+        <p>Home</p>
+      </a></div>
+    <div class="navtext"><a href="movie-recommendation.html">
+        <p>Movies Recommendation</p>
+      </a></div>
+    <div class="navtext"><a href="show-recommendation.html">
+        <p>Shows Recommendation</p>
+      </a></div>
+    <div class="navtext"><a href="recent.html">
+        <p>Recent</p>
+      </a></div>
+    <div class="navtext"><a href="quiz.html">
+        <p>Quiz</p>
+      </a></div>
+    <div class="navtext"><a href="Aboutstream.html">
+        <p>Streaming Platform</p>
+      </a></div>
+  </nav>
+
+  <!-- Quiz Content -->
+  <div class="quiz-container">
+    <h2> Movie Knowledge Quiz</h2>
+    <div id="quiz-container"></div>
+    <button onclick="submitQuiz()">Submit</button>
+    <p id="quiz-result"></p>
+  </div>
+
+  <!-- 👇 Load your external JS file here -->
+  <script src="quiz.js"></script>
+</body>
+
+</html>
